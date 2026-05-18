@@ -11,6 +11,9 @@ Estudante de Engenharia da Computação no UniCEUB com foco em:
 
 # Projetos
 
+# Adivinha de numero (python)
+adivinhe um número aleatório de 1 a 100.
+
 # Calculadora em C
 Projeto simples utilizando linguagem C.
 
