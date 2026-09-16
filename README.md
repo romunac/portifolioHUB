@@ -9,6 +9,9 @@ I use this repository to organize academic projects, experiments and practical w
 ## Technical Stack
 
 **Languages**
+- JAVA
+- RUST
+- HTML
 - C / C++
 - Python
 
