@@ -1,64 +1,396 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
-<meta charset="UTF-8">
-<title>Portfolio - Lucas Ferreira</title>
-<link rel="stylesheet" href="adds.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Vinhal Ferreira — Portfolio Interativo</title>
+    <link rel="stylesheet" href="adds.css">
+    <!-- FontAwesome icons CDN for UI elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<h1>Lucas Ferreira</h1>
-<p>Estudante de Engenharia de Computação</p>
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;Lucas.Dev /&gt;</a>
+            <nav class="nav-links">
+                <a href="#about"><i class="fa-solid fa-user"></i> Sobre</a>
+                <a href="#skills"><i class="fa-solid fa-code"></i> Habilidades</a>
+                <a href="#projects"><i class="fa-solid fa-folder-open"></i> Projetos</a>
+                <a href="#interactive"><i class="fa-solid fa-terminal"></i> Terminal & Demos</a>
+                <a href="#contact"><i class="fa-solid fa-paper-plane"></i> Contato</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-theme" title="Alternar Tema">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-<hr>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="badge"><i class="fa-solid fa-microchip"></i> Engenharia de Computação</div>
+            <h1>Olá, eu sou <span class="highlight">Lucas Vinhal Ferreira</span></h1>
+            <p class="subtitle">Estudante de Engenharia de Computação focado em Sistemas Embarcados, Desenvolvimento C/C++, Infraestrutura Linux e Automação.</p>
 
-<h2>Perfil</h2>
-<p>Estudante de Engenharia de Computação com interesse em programação em C e sistemas embarcados, especialmente com uso de ESP32.</p>
-<p>Email: lucasvinhal3001@gmail.com</p>
-<p>GitHub: github.com/romunac</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Ver Projetos</a>
+                <a href="#interactive" class="btn btn-secondary"><i class="fa-solid fa-terminal"></i> Abrir Terminal</a>
+                <a href="https://github.com/romunac" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="tech-card-floating">
+                <div class="status-dot"></div>
+                <div class="tech-text">
+                    <strong>ESP32 & Embedded Systems</strong>
+                    <span>C / C++ • Sensores • IoT</span>
+                </div>
+            </div>
+            <div class="tech-card-floating delay-1">
+                <div class="status-dot green"></div>
+                <div class="tech-text">
+                    <strong>Linux & Infrastructure</strong>
+                    <span>Ubuntu Server • Networks • Security</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<hr>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-title">
+            <h2>Sobre Mim</h2>
+            <div class="title-bar"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Formação & Perfil</h3>
+                <p>Engenharia de Computação na <strong>UniCEUB</strong> (em andamento).</p>
+                <p>Desenvolvo projetos voltados para programação de baixo nível, microcontroladores como ESP32, administração de sistemas Linux e redes de computadores.</p>
+                <div class="languages-spoken">
+                    <span><i class="fa-solid fa-language"></i> Português (Nativo)</span>
+                    <span><i class="fa-solid fa-globe"></i> Inglês (Fluente)</span>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-box">
+                    <span class="stat-number">C / C++</span>
+                    <span class="stat-label">Sistemas & Lógica</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">ESP32</span>
+                    <span class="stat-label">Sistemas Embarcados</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">Linux</span>
+                    <span class="stat-label">Ubuntu Server & Redes</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">Python</span>
+                    <span class="stat-label">Scripting & Automação</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2>Currículo</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-title">
+            <h2>Habilidades Técnicas</h2>
+            <div class="title-bar"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-code"></i> Linguagens</h3>
+                <div class="skill-tags">
+                    <span class="tag"><i class="fa-solid fa-c"></i> C / C++</span>
+                    <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="tag"><i class="fa-brands fa-java"></i> Java</span>
+                    <span class="tag"><i class="fa-brands fa-rust"></i> Rust</span>
+                    <span class="tag"><i class="fa-brands fa-html5"></i> HTML / CSS</span>
+                </div>
+            </div>
 
-<h3>Formação</h3>
-<p>Engenharia de Computação - UniCEUB (em andamento)</p>
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-microchip"></i> Sistemas Embarcados & Hardware</h3>
+                <div class="skill-tags">
+                    <span class="tag">ESP32</span>
+                    <span class="tag">Arduino</span>
+                    <span class="tag">Microcontroladores</span>
+                    <span class="tag">Sensores (CO2 / SCD30)</span>
+                    <span class="tag">Eletrônica Digital</span>
+                </div>
+            </div>
 
-<h3>Habilidades</h3>
-<ul>
-<li>Linguagem C</li>
-<li>Git e GitHub</li>
-<li>ESP32</li>
-<li>Sistemas embarcados</li>
-</ul>
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-server"></i> Infraestrutura & Redes</h3>
+                <div class="skill-tags">
+                    <span class="tag"><i class="fa-brands fa-linux"></i> Linux / Ubuntu Server</span>
+                    <span class="tag">Redes de Computadores</span>
+                    <span class="tag">SSH & Firewall (UFW)</span>
+                    <span class="tag">Git & GitHub</span>
+                    <span class="tag">VS Code</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h3>Idiomas</h3>
-<p>Português (nativo) | Inglês (fluente)</p>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-title">
+            <h2>Projetos em Destaque</h2>
+            <div class="title-bar"></div>
+        </div>
 
-<hr>
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="embedded">Sistemas Embarcados</button>
+            <button class="filter-btn" data-filter="c-cpp">Programação C / C++</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="linux">Linux & Infraestrutura</button>
+        </div>
 
-<h2>Projetos</h2>
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card" data-category="embedded">
+                <div class="project-header">
+                    <i class="fa-solid fa-microchip project-icon"></i>
+                    <span class="project-badge">Embarcados</span>
+                </div>
+                <h3>Monitoramento de CO2 com ESP32</h3>
+                <p>Sistema de medição e monitoramento contínuo de níveis de dióxido de carbono (CO2) em ambientes fechados utilizando ESP32 e sensor de precisão SCD30.</p>
+                <div class="project-tech">
+                    <span>ESP32</span>
+                    <span>Sensor SCD30</span>
+                    <span>C / C++</span>
+                    <span>IoT</span>
+                </div>
+                <div class="project-actions">
+                    <button class="btn-demo-link" onclick="openDemo('co2')"><i class="fa-solid fa-play"></i> Testar Demo Live</button>
+                </div>
+            </div>
 
-<h3>Monitoramento de CO2 com ESP32</h3>
-<p><strong>Problema:</strong> medir nível de CO2 em ambiente.</p>
-<p><strong>Solução:</strong> uso de ESP32 com sensor SCD30.</p>
-<p><strong>Tecnologias:</strong> ESP32, sensor SCD30</p>
+            <!-- Project Card 2 -->
+            <div class="project-card" data-category="c-cpp">
+                <div class="project-header">
+                    <i class="fa-solid fa-calculator project-icon"></i>
+                    <span class="project-badge">C / C++</span>
+                </div>
+                <h3>Calculadora Interativa em C</h3>
+                <p>Programa desenvolvido em linguagem C para execução de operações matemáticas fundamentais com validação de entradas e tratamento de divisão por zero.</p>
+                <div class="project-tech">
+                    <span>Linguagem C</span>
+                    <span>CLI</span>
+                    <span>Lógica de Programação</span>
+                </div>
+                <div class="project-actions">
+                    <button class="btn-demo-link" onclick="openDemo('calc')"><i class="fa-solid fa-terminal"></i> Executar no Navegador</button>
+                </div>
+            </div>
 
-<h3>Programas em C</h3>
-<p><strong>exemplos:</strong> exercícios de lógica como média, par/ímpar e equação do segundo grau. calculadora.</p>
-<p><strong>Tecnologia:</strong> C</p>
+            <!-- Project Card 3 -->
+            <div class="project-card" data-category="python">
+                <div class="project-header">
+                    <i class="fa-brands fa-python project-icon"></i>
+                    <span class="project-badge">Python</span>
+                </div>
+                <h3>Jogo Adivinhe o Número</h3>
+                <p>Aplicação interativa em Python que gera números randômicos com dicas condicionais ("Muito alto", "Muito baixo") e contagem inteligente de tentativas.</p>
+                <div class="project-tech">
+                    <span>Python 3</span>
+                    <span>Random</span>
+                    <span>Lógica de Jogos</span>
+                </div>
+                <div class="project-actions">
+                    <button class="btn-demo-link" onclick="openDemo('guess')"><i class="fa-solid fa-gamepad"></i> Jogar Agora</button>
+                </div>
+            </div>
 
-<hr>
+            <!-- Project Card 4 -->
+            <div class="project-card" data-category="linux">
+                <div class="project-header">
+                    <i class="fa-solid fa-server project-icon"></i>
+                    <span class="project-badge">Linux</span>
+                </div>
+                <h3>Ubuntu Server — Infraestrutura & Segurança</h3>
+                <p>Projeto de servidor Linux focado em arquitetura de redes, acesso remoto seguro via SSH, políticas de firewall UFW / Fail2Ban, e alta disponibilidade.</p>
+                <div class="project-tech">
+                    <span>Ubuntu Server</span>
+                    <span>SSH</span>
+                    <span>UFW / Fail2Ban</span>
+                    <span>Redes</span>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/romunac/ubuntu-server-monitoramento" target="_blank" class="btn-demo-link"><i class="fa-brands fa-github"></i> Ver no GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2>Habilidades</h2>
-<p>html, c code, visual studio, git e esp32</p>
-    
-<hr>
+    <!-- Interactive Section: Terminal & Demos -->
+    <section id="interactive" class="section">
+        <div class="section-title">
+            <h2>Sandbox Interativo & Terminal</h2>
+            <p class="section-subtitle">Explore o portfolio via linha de comando ou interaja com os programas desenvolvidos diretamente no navegador!</p>
+            <div class="title-bar"></div>
+        </div>
 
-<h2>Recomendações</h2>
-<p>Em construção.</p>
+        <div class="interactive-container">
+            <!-- Terminal Emulator Widget -->
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">lucas@embedded-portfolio:~ (bash)</div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <p class="terminal-line">Bem-vindo ao terminal interativo de <strong style="color: var(--primary-color)">Lucas Vinhal Ferreira</strong>.</p>
+                    <p class="terminal-line">Digite <span class="cmd-highlight">'help'</span> para listar os comandos disponíveis ou <span class="cmd-highlight">'projects'</span> para explorar o portfólio.</p>
+                </div>
+                <div class="terminal-input-row">
+                    <span class="prompt">lucas@portfolio:~$</span>
+                    <input type="text" id="terminal-input" placeholder="Digite um comando (ex: help, about, calc, guess)..." autocomplete="off" spellcheck="false">
+                </div>
+            </div>
 
-<hr>
+            <!-- Live Demo Runner Area -->
+            <div class="demo-runner-window" id="demo-runner">
+                <div class="runner-header">
+                    <h3 id="demo-title"><i class="fa-solid fa-play"></i> Executor de Demos Interativas</h3>
+                    <div class="demo-tabs">
+                        <button class="tab-btn active" onclick="switchDemoTab('calc')">Calculadora C</button>
+                        <button class="tab-btn" onclick="switchDemoTab('guess')">Jogo Adivinhar</button>
+                        <button class="tab-btn" onclick="switchDemoTab('co2')">Simulador CO2</button>
+                    </div>
+                </div>
 
+                <div class="runner-body">
+                    <!-- Demo 1: C Calculator -->
+                    <div id="demo-calc" class="demo-box active">
+                        <h4><i class="fa-solid fa-calculator"></i> Calculadora (Baseada em <code>projetos/calculadora.c</code>)</h4>
+                        <div class="calc-interface">
+                            <div class="calc-inputs">
+                                <input type="number" id="calc-num1" placeholder="Número 1" value="10">
+                                <select id="calc-op">
+                                    <option value="+">+</option>
+                                    <option value="-">-</option>
+                                    <option value="*">*</option>
+                                    <option value="/">/</option>
+                                </select>
+                                <input type="number" id="calc-num2" placeholder="Número 2" value="5">
+                                <button class="btn btn-primary" onclick="runCalculator()"><i class="fa-solid fa-equals"></i> Calcular</button>
+                            </div>
+                            <div class="calc-output" id="calc-result">
+                                Clique em "Calcular" para ver a saída compilada do código C.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Demo 2: Python Guess Number Game -->
+                    <div id="demo-guess" class="demo-box">
+                        <h4><i class="fa-solid fa-gamepad"></i> Jogo Adivinhe o Número (Baseado em <code>projetos/adivinhe o numero.py</code>)</h4>
+                        <div class="guess-interface">
+                            <p>Estou pensando em um número de 1 a 100... Tente adivinhar!</p>
+                            <div class="guess-controls">
+                                <input type="number" id="guess-input" min="1" max="100" placeholder="Digite seu palpite...">
+                                <button class="btn btn-primary" onclick="makeGuess()"><i class="fa-solid fa-check"></i> Palpitar</button>
+                                <button class="btn btn-secondary" onclick="resetGuessGame()"><i class="fa-solid fa-rotate-right"></i> Reiniciar</button>
+                            </div>
+                            <div class="guess-output" id="guess-result">
+                                Aguardando seu palpite...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Demo 3: Sensor Simulator -->
+                    <div id="demo-co2" class="demo-box">
+                        <h4><i class="fa-solid fa-microchip"></i> Telemetria de CO2 - ESP32 + SCD30</h4>
+                        <div class="co2-interface">
+                            <div class="co2-gauge-container">
+                                <div class="co2-gauge">
+                                    <span class="co2-value" id="co2-val">420</span>
+                                    <span class="co2-unit">PPM</span>
+                                </div>
+                                <div class="co2-status" id="co2-status">Qualidade do Ar: excelente</div>
+                            </div>
+                            <div class="co2-actions">
+                                <button class="btn btn-primary" onclick="triggerCO2Simulation()"><i class="fa-solid fa-arrows-rotate"></i> Simular Nova Leitura</button>
+                                <button class="btn btn-outline" id="auto-co2-btn" onclick="toggleAutoCO2()"><i class="fa-solid fa-play"></i> Auto Leitura (Ativo)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-title">
+            <h2>Entre em Contato</h2>
+            <div class="title-bar"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Vamos conversar!</h3>
+                <p>Estou disponível para oportunidades de projetos, estágios e colaborações técnicas em Engenharia e Desenvolvimento de Software.</p>
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>lucasvinhal3001@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <p><a href="https://github.com/romunac" target="_blank">github.com/romunac</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <p><a href="https://www.linkedin.com/in/lucas-vinhal-24334a2b3" target="_blank">Lucas Vinhal Ferreira</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Seu Nome</label>
+                    <input type="text" id="name" required placeholder="Digite seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Seu Email</label>
+                    <input type="email" id="email" required placeholder="nome@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Sua Mensagem</label>
+                    <textarea id="message" rows="4" required placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Enviar Mensagem</button>
+                <div id="form-toast" class="form-toast"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Lucas Vinhal Ferreira — Engenharia de Computação. Desenvolvido com HTML, CSS e JavaScript Interativo.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
